@@ -6,9 +6,9 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
-RUN mkdir /store
-WORKDIR /store
-COPY . /store/
+RUN mkdir /chat
+WORKDIR /chat
+COPY . /chat/
 
 # Install dependencies
 RUN pip install --upgrade pip
